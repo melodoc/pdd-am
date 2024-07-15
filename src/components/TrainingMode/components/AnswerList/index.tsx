@@ -17,7 +17,7 @@ const AnswerList = ({ answers, correctAnswer, selectedAnswer, showResult, onAnsw
     }, [correctAnswer, selectedAnswer, showResult]);
 
     return (
-        <ol>
+        <ul>
             {answers.map((answer, index) => (
                 <li
                     key={index}
@@ -27,7 +27,7 @@ const AnswerList = ({ answers, correctAnswer, selectedAnswer, showResult, onAnsw
                     {answer}
                 </li>
             ))}
-        </ol>
+        </ul>
     );
 };
 
