@@ -3,12 +3,14 @@ import { TQuestions } from '../../types/question';
 import AnswerList from './components/AnswerList';
 import Result from './components/Result';
 import NavigationButtons from './components/NavigationButtons';
+import NavigationForm from './components/NavigationForm';
 
 type TProps = {
   questions: Array<TQuestions>;
+  onResetTopic: () => void;
 };
 
-const TrainingMode = ({ questions }: TProps) => {
+const TrainingMode = ({ questions, onResetTopic }: TProps) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
@@ -56,8 +58,8 @@ const TrainingMode = ({ questions }: TProps) => {
   return (
     <div style={{ maxWidth: '900px' }}>
       <div>
-        <h3>{question}</h3>
-        {imageUrl && <img src={imageUrl} alt="Картинка вопроса" style={{ maxWidth: '100%', height: 'auto' }} />}
+        <h2>Вопрос {question}</h2>
+        {imageUrl && <img src={imageUrl} alt="Картинка вопроса" style={{ maxWidth: '700px', width: "100%", height: 'auto' }} />}
         <AnswerList
           answers={answers}
           correctAnswer={correctAnswer}
@@ -78,15 +80,12 @@ const TrainingMode = ({ questions }: TProps) => {
           isPrevDisabled={isPrevDisabled}
           isNextDisabled={isNextDisabled}
         />
-        <form style={{ marginTop: '20px' }} onSubmit={handleGoToQuestionClick}>
-          <input
-            type="number"
-            value={inputQuestionNumber}
-            onChange={handleInputChange}
-            placeholder="Введите номер вопроса"
-          />
-          <button onClick={handleGoToQuestionClick}>К вопросу</button>
-        </form>
+        <NavigationForm
+          onGoToQuestionClick={handleGoToQuestionClick}
+          onInputChange={handleInputChange}
+          inputQuestionNumber={inputQuestionNumber}
+          onResetTopic={onResetTopic}
+        />
       </div>
     </div>
   );

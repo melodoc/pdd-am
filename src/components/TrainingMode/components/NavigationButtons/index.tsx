@@ -18,10 +18,10 @@ const NavigationButtons = ({
           marginRight: '8px'
         }}
         onClick={handlePrevQuestionClick} disabled={isPrevDisabled}>
-        Назад
+        ⏮️ Назад
       </button>
       <button onClick={handleNextQuestionClick} disabled={isNextDisabled}>
-        Вперед
+        Пропустить ⏭️
       </button>
     </>
   );

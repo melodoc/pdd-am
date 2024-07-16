@@ -24,11 +24,8 @@ function MainPage() {
     <div>
       {!selectedTopic ? (
         <TopicSelector onSelectTopic={handleSelectTopic} />
-      ) : (<>
-        <TrainingMode questions={questions} />
-        <br/>
-        <button onClick={handleResetTopic}>К темам</button>
-      </>
+      ) : (
+        <TrainingMode onResetTopic={handleResetTopic} questions={questions} />
       )}
     </div>
   );
