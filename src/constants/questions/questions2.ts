@@ -1,4 +1,5 @@
 import { TQuestions } from '../../types/question';
+import { PATHNAME } from '../path-name';
 
 export const questions2: Array<TQuestions> = [
   {
@@ -441,7 +442,7 @@ export const questions2: Array<TQuestions> = [
       "Считаем эту дорогу равнозначной."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/2/theme_2_pic_1.png"
+    imageUrl: `${PATHNAME}/2/theme_2_pic_1.png`
   },
   {
     question: "51. Сколько полос движения присутствует в данной проезжей части?",
@@ -451,7 +452,7 @@ export const questions2: Array<TQuestions> = [
       "Три."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/2/theme_2_pic_2.png"
+    imageUrl: `${PATHNAME}/2/theme_2_pic_2.png`
   },
   {
     question: "52. Разрешается ли двигаться по центру проезжей части в условиях указанной ширины?",
@@ -461,7 +462,7 @@ export const questions2: Array<TQuestions> = [
       "Нет."
     ],
     correctAnswer: 2,
-    imageUrl: "/images/2/theme_2_pic_3.png"
+    imageUrl: `${PATHNAME}/2/theme_2_pic_3.png`
   },
   {
     question: "53. Какой из указанных недвижимых объектов не является препятствием?",
@@ -490,7 +491,7 @@ export const questions2: Array<TQuestions> = [
       "Четыре."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/2/theme_2_pic_4.png"
+    imageUrl: `${PATHNAME}/2/theme_2_pic_4.png`
   },
   {
     question: "56. Сколько перекрестков есть в данном рисунке?",
@@ -500,7 +501,7 @@ export const questions2: Array<TQuestions> = [
       "Четыре."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/2/theme_2_pic_5.png"
+    imageUrl: `${PATHNAME}/2/theme_2_pic_5.png`
   },
   {
     question: "57. Сколько пересечений проезжих частей есть в данном рисунке?",
@@ -509,7 +510,7 @@ export const questions2: Array<TQuestions> = [
       "Два."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/2/theme_2_pic_6.png"
+    imageUrl: `${PATHNAME}/2/theme_2_pic_6.png`
   },
   {
     question: "58. Сколько полос движения имеет данная дорога?",
@@ -518,7 +519,7 @@ export const questions2: Array<TQuestions> = [
       "Четыре."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/2/theme_2_pic_7.png"
+    imageUrl: `${PATHNAME}/2/theme_2_pic_7.png`
   },
   {
     question: "59. На каком рисунке дорога имеет разделительную полосу?",
@@ -528,7 +529,7 @@ export const questions2: Array<TQuestions> = [
       "Только на левом."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/2/theme_2_pic_8.png"
+    imageUrl: `${PATHNAME}/2/theme_2_pic_8.png`
   },
   {
     question: "60. Уступить дорогу другим транспортным средствам означает:",
@@ -547,7 +548,7 @@ export const questions2: Array<TQuestions> = [
       "В обоих случаях."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/2/theme_2_pic_9.png"
+    imageUrl: `${PATHNAME}/2/theme_2_pic_9.png`
   },
   {
     question: "62. Пересечение скольких проезжих частей есть на перекрестке?",
@@ -557,7 +558,7 @@ export const questions2: Array<TQuestions> = [
       "Четырех."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/2/theme_2_pic_10.png"
+    imageUrl: `${PATHNAME}/2/theme_2_pic_10.png`
   },
   {
     question: "63. Перестроением считается:",

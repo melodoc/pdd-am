@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import TrainingMode from '../TrainingMode';
 import TopicSelector from '../TopicSelector';
 import { TQuestions } from '../../types/question';
-import { TOPICS_MAP } from '../../constants/select-questions';
+import { TOPICS_MAP } from '../../constants/topics';
 
 function MainPage() {
   const [selectedTopic, setSelectedTopic] = useState<number | null>(null);

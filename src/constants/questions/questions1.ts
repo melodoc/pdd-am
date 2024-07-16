@@ -1,4 +1,5 @@
 import { TQuestions } from '../../types/question';
+import { PATHNAME } from '../path-name';
 
 export const questions1: Array<TQuestions> = [
   {
@@ -11,7 +12,7 @@ export const questions1: Array<TQuestions> = [
       "5. 5"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_1.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_1.png`
   },
   {
     question: "2. Разрешается ли водителю автобуса въехать на перекресток в данной ситуации?",
@@ -21,7 +22,7 @@ export const questions1: Array<TQuestions> = [
       "3. Разрешается, если автобус движется по установленному маршруту."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_2.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_2.png`
   },
   {
     question: "3. Из какой полосы следует выполнять поворот направо в указанной ситуации?",
@@ -30,7 +31,7 @@ export const questions1: Array<TQuestions> = [
       "2. Только из крайней правой полосы, обозначенной разметкой 'А'"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_3.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_3.png`
   },
   {
     question: "4. На перекрестке организовано круговое движение. Проезжая часть, по которой Вы подъезжаете к перекрестку имеет две полосы движения. Какую полосу Вы обязаны занять для поворота при въезде на перекресток?",
@@ -48,7 +49,7 @@ export const questions1: Array<TQuestions> = [
       "2. Запрещается"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_4.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_4.png`
   },
   {
     question: "6. На дорогах с двусторонним движением, имеющих три полосы, обозначенные разметкой, из которых средняя используется для движения в обоих направлениях (за исключением дорог с реверсивным регулированием движения) въехать на крайнюю левую полосу:",
@@ -67,7 +68,7 @@ export const questions1: Array<TQuestions> = [
       "3. Только прямо."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_5.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_5.png`
   },
   {
     question: "8. В каком направлении запрещено движение?",
@@ -78,7 +79,7 @@ export const questions1: Array<TQuestions> = [
       "4. Во всех направлениях."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_6.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_6.png`
   },
   {
     question: "9. Разворот запрещается:",
@@ -99,7 +100,7 @@ export const questions1: Array<TQuestions> = [
       "3. Разрешается, если автобус движется по установленному маршруту."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_7.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_7.png`
   },
   {
     question: "11. В каком ответе правильно указано разрешенное направление движения?",
@@ -110,7 +111,7 @@ export const questions1: Array<TQuestions> = [
       "4. Прямо и разворот"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_8.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_8.png`
   },
   {
     question: "12. Разворот запрещается, если видимость дороги хотя бы в одном направлении менее:",
@@ -139,7 +140,7 @@ export const questions1: Array<TQuestions> = [
       "3. Только налево"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_9.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_9.png`
   },
   {
     question: "15. На каком рисунке водитель правильно выполняет маневр?",
@@ -149,7 +150,7 @@ export const questions1: Array<TQuestions> = [
       "3.3"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_10.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_10.png`
   },
   {
     question: "16. Водитель какого транспортного средства правильно выполняет разворот?",
@@ -159,7 +160,7 @@ export const questions1: Array<TQuestions> = [
       "3. Оба водителя."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_11.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_11.png`
   },
   {
     question: "17. На дорогах с двусторонним движением при отсутствии дорожных знаков, разметки и разделительной полосы водители должны объезжать элементы дорожных сооружений, находящихся на проезжей части дорог:",
@@ -178,7 +179,7 @@ export const questions1: Array<TQuestions> = [
       "4. Во всех направлениях"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_12.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_12.png`
   },
   {
     question: "19. Водитель какого транспортного средства нарушает правила поворота с дороги, на которой есть полоса торможения?",
@@ -188,7 +189,7 @@ export const questions1: Array<TQuestions> = [
       "3. Оба водителя выполняют поворот правильно."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_13.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_13.png`
   },
   {
     question: "20. Разрешается ли водителю красного автомобиля в данной ситуации продолжить движение?",
@@ -197,7 +198,7 @@ export const questions1: Array<TQuestions> = [
       "2. Запрещается"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_14.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_14.png`
   },
   {
     question: "21. На дороге с двусторонним движением, имеющей три полосы, Вам необходимо совершить левый поворот. С какой полосы Вы совершите данный маневр?",
@@ -216,7 +217,7 @@ export const questions1: Array<TQuestions> = [
       "2. Запрещается"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_15.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_15.png`
   },
   {
     question: "23. Разворот запрещается:",
@@ -237,7 +238,7 @@ export const questions1: Array<TQuestions> = [
       "3. Только прямо."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_16.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_16.png`
   },
   {
     question: "25. Водители каких транспортных средств нарушили требования дорожного знака?",
@@ -248,7 +249,7 @@ export const questions1: Array<TQuestions> = [
       "4. Водители всех транспортных средств."
     ],
     correctAnswer: 3,
-    imageUrl: "/images/1/theme_1_pic_17.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_17.png`
   },
   {
     question: "26. При одновременном перестроении транспортных средств, движущихся попутно, дорогу должен уступить:",
@@ -265,7 +266,7 @@ export const questions1: Array<TQuestions> = [
       "2. Водитель автобуса."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_18.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_18.png`
   },
   {
     question: "28. Обязан ли водитель автобуса, движущегося по установленному маршруту, уступать дорогу в данной ситуации?",
@@ -275,7 +276,7 @@ export const questions1: Array<TQuestions> = [
       "3. Не обязан, так как он движется прямо."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_19c.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_19c.png`
   },
   {
     question: "29. Если встречный разъезд на уклонах, обозначенных соответствующими знаками, затруднен, необходимо уступить дорогу:",
@@ -293,7 +294,7 @@ export const questions1: Array<TQuestions> = [
       "2. Водитель автобуса."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_20.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_20.png`
   },
   {
     question: "31. Преимущество в движении имеет:",
@@ -303,7 +304,7 @@ export const questions1: Array<TQuestions> = [
       "3. Синий автомобиль, так как при одновременном перестроении находится в левой стороне."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_21.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_21.png`
   },
   {
     question: "32. Обязаны ли водители транспортных средств в населенных пунктах уступать дорогу транспортным средствам общего пользования, начинающим движение от оборудованной территории обозначенного места остановки?",
@@ -320,7 +321,7 @@ export const questions1: Array<TQuestions> = [
       "2. Водитель грузового автомобиля."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_22.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_22.png`
   },
   {
     question: "34. Водитель какого транспортного средства должен уступить дорогу?",
@@ -329,7 +330,7 @@ export const questions1: Array<TQuestions> = [
       "2. Водитель автомобиля."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_23.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_23.png`
   },
   {
     question: "35. Водитель какого транспортного средства должен уступить дорогу?",
@@ -338,7 +339,7 @@ export const questions1: Array<TQuestions> = [
       "2. Водитель трамвая."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_24.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_24.png`
   },
   {
     question: "36. Укажите очередность проезда перекрестка:",
@@ -347,7 +348,7 @@ export const questions1: Array<TQuestions> = [
       "2. Автобус и гужевая повозка, грузовой автомобиль."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_25.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_25.png`
   },
   {
     question: "37. При встречном разъезде на крутом спуске необходимо уступить дорогу:",
@@ -384,7 +385,7 @@ export const questions1: Array<TQuestions> = [
       "3. Начать движение, зная, что водитель легкового автомобиля уступает дорогу."
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_26.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_26.png`
   },
   {
     question: "41. В данной ситуации водитель белого легкового автомобиля:",
@@ -393,7 +394,7 @@ export const questions1: Array<TQuestions> = [
       "2. Имеет право право на первоочередное движение, так как маршрутный автобус перестраивается, переходя на вторую полосу."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_27.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_27.png`
   },
   {
     question: "42. Водитель какого транспортного средства имеет право право на первоочередное движение?",
@@ -402,7 +403,7 @@ export const questions1: Array<TQuestions> = [
       "2. Водитель маршрутного автобуса."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_28.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_28.png`
   },
   {
     question: "43. Водитель какого транспортного средства имеет право право на первоочередное движение в данной ситуации?",
@@ -412,7 +413,7 @@ export const questions1: Array<TQuestions> = [
       "3. Водитель легкового автомобиля не имеет право переехать на правую полосу."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_29.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_29.png`
   },
   {
     question: "44. Обязан ли водитель автобуса уступить дорогу грузовому автомобилю на перекрестке, где организовано кольцевое движение?",
@@ -421,7 +422,7 @@ export const questions1: Array<TQuestions> = [
       "2. Не обязан."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_30.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_30.png`
   },
   {
     question: "45. Обязан ли водитель автобуса, продолжающего движение прямо, уступить дорогу грузовому автомобилю?",
@@ -430,7 +431,7 @@ export const questions1: Array<TQuestions> = [
       "2. Не обязан."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_31.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_31.png`
 
   },
   {
@@ -442,7 +443,7 @@ export const questions1: Array<TQuestions> = [
       "4. Никому."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_32.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_32.png`
   },
   {
     question: "47. Если Вы намерены продолжить движение прямо, кому Вы должны уступить дорогу?",
@@ -453,7 +454,7 @@ export const questions1: Array<TQuestions> = [
       "4. Только мотоциклу."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_33.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_33.png`
   },
   {
     question: "48. В данной ситуации обязан ли водитель мотоцикла уступить дорогу?",
@@ -462,7 +463,7 @@ export const questions1: Array<TQuestions> = [
       "2. Обязан."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_34.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_34.png`
   },
   {
     question: "49. В данной ситуации имеете ли Вы право на указанный маневр?",
@@ -471,7 +472,7 @@ export const questions1: Array<TQuestions> = [
       "2. Нет."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_35.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_35.png`
   },
   {
     question: "50. Вы продолжаете движение прямо, какому транспортному средству Вы должны уступить дорогу?",
@@ -482,7 +483,7 @@ export const questions1: Array<TQuestions> = [
       "4. Никому."
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_36.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_36.png`
   },
   {
     question: "51. Вы продолжаете движение прямо, обязаны ли Вы уступить дорогу легковому автомобилю?",
@@ -491,7 +492,7 @@ export const questions1: Array<TQuestions> = [
       "2. Не обязаны."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_37.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_37.png`
   },
   {
     question: "52. Вы начинаете движение с обочины, обязаны ли Вы уступить дорогу легковому автомобилю, выполняющему разворот?",
@@ -500,7 +501,7 @@ export const questions1: Array<TQuestions> = [
       "2. Не обязаны."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_38.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_38.png`
   },
   {
     question: "53. Вы продолжаете движение прямо, какому транспортному средству Вы должны уступить дорогу?",
@@ -511,7 +512,7 @@ export const questions1: Array<TQuestions> = [
       "4. Всем транспортным средствам."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_39.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_39.png`
   },
   {
     question: "54. Если Вы намерены совершить левый поворот, какому транспортному средству Вы должны уступить дорогу?",
@@ -521,7 +522,7 @@ export const questions1: Array<TQuestions> = [
       "3. Всем транспортным средствам."
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_40.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_40.png`
   },
   {
     question: "55. Если Вы намерены произвести разворот на перекрестке, какому транспортному средству Вы должны уступить дорогу?",
@@ -531,7 +532,7 @@ export const questions1: Array<TQuestions> = [
       "3. Грузовому автомобилю."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_41.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_41.png`
   },
   {
     question: "56. Если Вы намерены совершить левый поворот на перекрестке, какому транспортному средству Вы должны уступить дорогу?",
@@ -541,7 +542,7 @@ export const questions1: Array<TQuestions> = [
       "3. Никому."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_42.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_42.png`
   },
   {
     question: "57. Если Вы намерены совершить левый поворот на перекрестке, какому транспортному средству Вы должны уступить дорогу?",
@@ -551,7 +552,7 @@ export const questions1: Array<TQuestions> = [
       "3. Всем транспортным средствам."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_43.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_43.png`
   },
   {
     question: "58. Если Вы намерены совершить поворот на перекрестке, какому транспортному средству Вы должны уступить дорогу?",
@@ -562,7 +563,7 @@ export const questions1: Array<TQuestions> = [
       "4. Никому."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_44.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_44.png`
   },
   {
     question: "59. Если Вы намерены выполнить поворот налево, какому транспортному средству Вы должны уступить дорогу?",
@@ -573,7 +574,7 @@ export const questions1: Array<TQuestions> = [
       "4. Никому."
     ],
     correctAnswer: 3,
-    imageUrl: "/images/1/theme_1_pic_45.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_45.png`
   },
   {
     question: "60. Если Вы намерены выполнить поворот направо, обязаны ли Вы уступить дорогу легковому автомобилю?",
@@ -582,7 +583,7 @@ export const questions1: Array<TQuestions> = [
       "2. Не обязаны."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_46.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_46.png`
   },
   {
     question: "61. Если Вы намерены выполнить поворот направо, какому транспортному средству Вы должны уступить дорогу?",
@@ -592,7 +593,7 @@ export const questions1: Array<TQuestions> = [
       "3. Мотоциклу и легковому автомобилю."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_47.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_47.png`
   },
   {
     question: "62. Обязаны ли мы в данной ситуации уступить дорогу водителю автомобиля, приближающегося с противоположной стороны?",
@@ -601,7 +602,7 @@ export const questions1: Array<TQuestions> = [
       "2. Нет."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_48.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_48.png`
   },
   {
     question: "63. В данной ситуации Вы обязаны:",
@@ -610,7 +611,7 @@ export const questions1: Array<TQuestions> = [
       "2. Проехать первыми."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_49.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_49.png`
   },
   {
     question: "64. В данной ситуации:",
@@ -620,7 +621,7 @@ export const questions1: Array<TQuestions> = [
       "3. Разрешаются оба действия."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_50.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_50.png`
   },
   {
     question: "65. В этой ситуации:",
@@ -629,7 +630,7 @@ export const questions1: Array<TQuestions> = [
       "2. Вы можете проехать первыми."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_51.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_51.png`
   },
   {
     question: "66. В данной ситуации при движении прямо разрешается:",
@@ -639,7 +640,7 @@ export const questions1: Array<TQuestions> = [
       "3. Обе указанные ситуации разрешаются."
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_52.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_52.png`
   },
   {
     question: "67. Выйдя на дорогу, в данной ситуации мы обязаны уступить:",
@@ -649,7 +650,7 @@ export const questions1: Array<TQuestions> = [
       "3. Водителям и пешеходам"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_53.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_53.png`
   },
   {
     question: "68. В данной ситуации уступить дорогу обязан:",
@@ -658,7 +659,7 @@ export const questions1: Array<TQuestions> = [
       "2. Водитель мотоцикла."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_54.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_54.png`
   },
   {
     question: "69. В какой из изображенных на рисунке ситуаций водитель синего автомобиля имеет право на первоочередное движение по отношению к другим водителям?",
@@ -668,7 +669,7 @@ export const questions1: Array<TQuestions> = [
       "3. Обеих"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_55.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_55.png`
   },
   {
     question: "70. Разворот в указанном месте:",
@@ -678,7 +679,7 @@ export const questions1: Array<TQuestions> = [
       "3. Запрещается"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_56.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_56.png`
   },
   {
     question: "71. Водитель какого транспортного средства должен уступить дорогу?",
@@ -687,7 +688,7 @@ export const questions1: Array<TQuestions> = [
       "2. Легкового автомобиля"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_57.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_57.png`
   },
   {
     question: "72. С этой полосы в каком направлении может продолжить движение водитель легкового автомобиля?",
@@ -698,7 +699,7 @@ export const questions1: Array<TQuestions> = [
       "4. Прямо, налево и в обратном направлении."
     ],
     correctAnswer: 3,
-    imageUrl: "/images/1/theme_1_pic_58.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_58.png`
   },
   {
     question: "73. При выполнении правого поворота на прилегающую справа дорогу необходимо:",
@@ -708,7 +709,7 @@ export const questions1: Array<TQuestions> = [
       "3. Оба варианта верны."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_59.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_59.png`
   },
   {
     question: "74. При въезде в левый двор кому следует уступить дорогу?",
@@ -718,7 +719,7 @@ export const questions1: Array<TQuestions> = [
       "3. Никому"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_60.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_60.png`
   },
   {
     question: "75. Разворот на данном перекрестке:",
@@ -727,7 +728,7 @@ export const questions1: Array<TQuestions> = [
       "2. Запрещается"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_61.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_61.png`
   },
   {
     question: "76. Обязан ли водитель легкового автомобиля уступить дорогу водителю автокрана, перестраивающегося на его полосу?",
@@ -737,7 +738,7 @@ export const questions1: Array<TQuestions> = [
       "3. Нет"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_62.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_62.png`
   },
   {
     question: "77. Разрешается ли разворот в данном месте?",
@@ -747,7 +748,7 @@ export const questions1: Array<TQuestions> = [
       "3. Нет"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_63.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_63.png`
   },
   {
     question: "78. Обязан ли водитель легкового автомобиля пересториться на крайнюю правую полосу после завершения обгона?",
@@ -757,7 +758,7 @@ export const questions1: Array<TQuestions> = [
       "3. Нет"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_64.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_64.png`
   },
   {
     question: "79. В тех случаях, когда полосы движения транспортных средств пересекаются, а последовательность проезда не установлена правилами, дорогу должен уступить тот водитель,",
@@ -774,7 +775,7 @@ export const questions1: Array<TQuestions> = [
       "2. Водитель, собирающийся остановиться."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_65.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_65.png`
   },
   {
     question: "81. Разворот в указанном месте:",
@@ -784,7 +785,7 @@ export const questions1: Array<TQuestions> = [
       "3. Запрещается"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_66.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_66.png`
   },
   {
     question: "82. Водитель легкового автомобиля:",
@@ -793,7 +794,7 @@ export const questions1: Array<TQuestions> = [
       "2. Имеет преимущество, поскольку подъехал с правой стороны."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_67.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_67.png`
   },
   {
     question: "83. Обязан ли водитель перестроиться на правую полосу и только после этого выполнить поворот направо в данной ситуации?",
@@ -802,7 +803,7 @@ export const questions1: Array<TQuestions> = [
       "2. Нет"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_68.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_68.png`
   },
   {
     question: "84. Разрешается ли разворот при нахождении в пределах моста?",
@@ -811,7 +812,7 @@ export const questions1: Array<TQuestions> = [
       "2. Запрещается."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_69.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_69.png`
   },
   {
     question: "85. Въезд на перекресток с указанной полосы:",
@@ -820,7 +821,7 @@ export const questions1: Array<TQuestions> = [
       "2. Разрешается в любом случае."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_70.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_70.png`
   },
   {
     question: "86. Разрешен ли разворот в указанном месте?",
@@ -830,7 +831,7 @@ export const questions1: Array<TQuestions> = [
       "3. Нет"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_71.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_71.png`
   },
   {
     question: "87. Водитель, двигающийся без перестроения, уступить дорогу водителю, перестраивающемуся с правой стороны:",
@@ -839,7 +840,7 @@ export const questions1: Array<TQuestions> = [
       "2. Обязан."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_72.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_72.png`
   },
   {
     question: "88. Разворот в данном месте:",
@@ -848,7 +849,7 @@ export const questions1: Array<TQuestions> = [
       "2. Запрещается"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_73.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_73.png`
   },
   {
     question: "89. При одновременном начале движения с парковки обязаны ли Вы уступить дорогу впереди находящемуся водителю?",
@@ -857,7 +858,7 @@ export const questions1: Array<TQuestions> = [
       "2. Нет"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_74.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_74.png`
   },
   {
     question: "90. Разрешается ли на перекрестке разворот с применением заднего хода?",
@@ -867,7 +868,7 @@ export const questions1: Array<TQuestions> = [
       "3. Нет"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_75.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_75.png`
   },
   {
     question: "91. Разрешается ли водителю выполнить поворот направо в данной ситуации?",
@@ -876,7 +877,7 @@ export const questions1: Array<TQuestions> = [
       "2. Нет"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_76.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_76.png`
   },
   {
     question: "92. При остановке в данной ситуации какой световой указатель должен включить водитель?",
@@ -886,7 +887,7 @@ export const questions1: Array<TQuestions> = [
       "3. Левый"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_77.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_77.png`
   },
   {
     question: "93. По причине отсутствия видимости, при движении задним ходом водитель должен:",
@@ -904,7 +905,7 @@ export const questions1: Array<TQuestions> = [
       "2. Запрещается"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_78.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_78.png`
   },
   {
     question: "95. Разрешается ли водителю легкового автомобиля начать движение?",
@@ -914,7 +915,7 @@ export const questions1: Array<TQuestions> = [
       "3. Нет"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_79.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_79.png`
   },
   {
     question: "96. В каком варианте разрешен разворот?",
@@ -933,7 +934,7 @@ export const questions1: Array<TQuestions> = [
       "3. Нет"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_80.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_80.png`
   },
   {
     question: "98. Обязан ли водитель в данной ситуации при выполнении поворота налево подать сигнал световым указателем?",
@@ -943,7 +944,7 @@ export const questions1: Array<TQuestions> = [
       "3. Не обязан"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_81.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_81.png`
   },
   {
     question: "99. Разрешается ли водителю легкового автомобиля подъехать задним ходом к пассажиру, стоящему на мосту?",
@@ -953,7 +954,7 @@ export const questions1: Array<TQuestions> = [
       "3. Нет"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_82.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_82.png`
   },
   {
     question: "100. Разрешается ли разворот в данной ситуации?",
@@ -962,7 +963,7 @@ export const questions1: Array<TQuestions> = [
       "2. Запрещается"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_83.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_83.png`
   },
   {
     question: "101. Какое правило нарушает водитель, въезжая во двор?",
@@ -972,7 +973,7 @@ export const questions1: Array<TQuestions> = [
       "3. Оба нарушения одновременно."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_84.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_84.png`
   },
   {
     question: "102. Уступить дорогу водителю грузового автомобиля:",
@@ -982,7 +983,7 @@ export const questions1: Array<TQuestions> = [
       "3. Не обязаны."
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_85.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_85.png`
   },
   {
     question: "103. Дорогу должен уступить:",
@@ -991,7 +992,7 @@ export const questions1: Array<TQuestions> = [
       "2. Водитель грузового автомобиля."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_86.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_86.png`
   },
   {
     question: "104. Если мы случайно проехали перекрёсток, разрешено ли в этой ситуации использовать задний ход, чтобы затем продолжить движение в необходимом нам направлении?",
@@ -1000,7 +1001,7 @@ export const questions1: Array<TQuestions> = [
       "2. Нет"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_87.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_87.png`
   },
   {
     question: "105. С этой полосы продолжить движение разрешается:",
@@ -1010,7 +1011,7 @@ export const questions1: Array<TQuestions> = [
       "3. Направо, налево и в обратном направлении."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_88.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_88.png`
   },
   {
     question: "106. В данной ситуации разрешается ли въезд в правый двор, выполнив разворот?",
@@ -1019,7 +1020,7 @@ export const questions1: Array<TQuestions> = [
       "2. Нет"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_89.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_89.png`
   },
   {
     question: "107. При перестроении на соседнюю полосу в данной ситуации:",
@@ -1028,7 +1029,7 @@ export const questions1: Array<TQuestions> = [
       "2. Вы имеете преимущество в движении."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_90.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_90.png`
   },
   {
     question: "108. В данной ситуации разрешается ли подъехать задним ходом к пассажиру?",
@@ -1037,7 +1038,7 @@ export const questions1: Array<TQuestions> = [
       "2. Нет"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_91.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_91.png`
   },
   {
     question: "109. Как Вы должны поступить при левом повороте и развороте вне перекрестка?",
@@ -1054,7 +1055,7 @@ export const questions1: Array<TQuestions> = [
       "2. Разрешается до пешеходного перехода"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_92.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_92.png`
   },
   {
     question: "111. Начиная движение, обязаны ли Вы уступить дорогу водителю, выполняющему разворот?",
@@ -1063,7 +1064,7 @@ export const questions1: Array<TQuestions> = [
       "2. Нет"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_93.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_93.png`
   },
   {
     question: "112. Подъехать задним ходом к пассажиру в данной ситуации:",
@@ -1073,7 +1074,7 @@ export const questions1: Array<TQuestions> = [
       "3. Запрещается"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_94.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_94.png`
   },
   {
     question: "113. Какой водитель нарушает правила движения, выйдя с перекрестка с круговым движением?",
@@ -1083,7 +1084,7 @@ export const questions1: Array<TQuestions> = [
       "3. Никто"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_95.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_95.png`
   },
   {
     question: "114. Разворот на данном перекрестке:",
@@ -1092,7 +1093,7 @@ export const questions1: Array<TQuestions> = [
       "2. Запрещается"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_96.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_96.png`
   },
   {
     question: "115. В каком направлении движение разрешено?",
@@ -1102,7 +1103,7 @@ export const questions1: Array<TQuestions> = [
       "3. Налево и в обратном направлении."
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_97.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_97.png`
   },
   {
     question: "116. Обязаны ли Вы включить правый указатель поворота на данном перекрестке?",
@@ -1112,7 +1113,7 @@ export const questions1: Array<TQuestions> = [
       "3. Да, за исключением выполнения разворота"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_98.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_98.png`
   },
 
   {
@@ -1141,7 +1142,7 @@ export const questions1: Array<TQuestions> = [
       "Ни в одном из случаев"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_99.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_99.png`
   },
   {
     question: "120. Подача сигнала преимущество по отношению к другим участникам:",
@@ -1159,7 +1160,7 @@ export const questions1: Array<TQuestions> = [
       "Запрещается"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_100.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_100.png`
   },
   {
     question: "122. Проехав грузовой автомобиль, по какой полосе Вы можете продолжить движение?",
@@ -1168,7 +1169,7 @@ export const questions1: Array<TQuestions> = [
       "По обеим параллельным полосам разрешается"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_101.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_101.png`
   },
   {
     question: "123. Разворот в указанном месте:",
@@ -1178,7 +1179,7 @@ export const questions1: Array<TQuestions> = [
       "Запрещается"
     ],
     correctAnswer: 2,
-    imageUrl: "/images/1/theme_1_pic_102.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_102.png`
   },
   {
     question: "124. Право на первоочередное движение имеет:",
@@ -1187,7 +1188,7 @@ export const questions1: Array<TQuestions> = [
       "Водитель грузового автомобиля."
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_103.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_103.png`
   },
   {
     question: "125. При одновременном перестроении водитель какого транспортного средства имеет право на первоочередное движение?",
@@ -1196,7 +1197,7 @@ export const questions1: Array<TQuestions> = [
       "Легкового автомобиля"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_104.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_104.png`
   },
   {
     question: "126. Разрешается ли подъехать задним ходом к пассажиру:",
@@ -1205,7 +1206,7 @@ export const questions1: Array<TQuestions> = [
       "Нет"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_105.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_105.png`
   },
   {
     question: "127. При въезде в левый двор мы обязаны уступить дорогу:",
@@ -1216,7 +1217,7 @@ export const questions1: Array<TQuestions> = [
       "Велосипедисту и пешеходам"
     ],
     correctAnswer: 3,
-    imageUrl: "/images/1/theme_1_pic_106.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_106.png`
   },
   {
     question: "128. При движении в направлении данного подъема разворот разрешается, если",
@@ -1226,7 +1227,7 @@ export const questions1: Array<TQuestions> = [
       "Запрещается"
     ],
     correctAnswer: 1,
-    imageUrl: "/images/1/theme_1_pic_107.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_107.png`
   },
   {
     question: "129. Водитель какого транспортного средства должен уступить дорогу?",
@@ -1235,7 +1236,7 @@ export const questions1: Array<TQuestions> = [
       "Водитель легкового автомобиля"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_108.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_108.png`
   },
   {
     question: "130. Разрешается ли разворот в данном месте?",
@@ -1244,7 +1245,7 @@ export const questions1: Array<TQuestions> = [
       "Запрещается"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_109.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_109.png`
   },
   {
     question: "131. Разрешается ли проехать мост, если это не создает препятствия для водителя мотоцикла?",
@@ -1253,6 +1254,6 @@ export const questions1: Array<TQuestions> = [
       "Нет"
     ],
     correctAnswer: 0,
-    imageUrl: "/images/1/theme_1_pic_110.png"
+    imageUrl: `${PATHNAME}/1/theme_1_pic_110.png`
   }
 ];

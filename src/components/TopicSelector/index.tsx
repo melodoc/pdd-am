@@ -1,4 +1,4 @@
-import { TOPICS } from '../../constants/select-questions';
+import { TOPICS } from '../../constants/topics';
 
 type TProps = {
     onSelectTopic: (id: number) => void;
@@ -17,7 +17,7 @@ const TopicSelector = ({ onSelectTopic }: TProps) => {
                 gridGap: "10px",
             }}>
                 {TOPICS.map(topic => (
-                    <li key={topic.id}>
+                    <li key={`${topic.id}_${topic.name}`}>
                         <button onClick={() => onSelectTopic(topic.id)}>{topic.name}</button>
                     </li>
                 ))}
