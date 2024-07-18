@@ -67,7 +67,7 @@ export const questions1: Array<TQuestions> = [
       "2. Прямо и разворот.",
       "3. Только прямо."
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     imageUrl: `${PATHNAME}/1/theme_1_pic_5.png`
   },
   {
@@ -276,7 +276,7 @@ export const questions1: Array<TQuestions> = [
       "3. Не обязан, так как он движется прямо."
     ],
     correctAnswer: 0,
-    imageUrl: `${PATHNAME}/1/theme_1_pic_19c.png`
+    imageUrl: `${PATHNAME}/1/theme_1_pic_19.png`
   },
   {
     question: "29. Если встречный разъезд на уклонах, обозначенных соответствующими знаками, затруднен, необходимо уступить дорогу:",
