@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gifsicle": "^5.2.1",
+    "pngquant-bin": "^6.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -19,6 +21,7 @@
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "compress-images": "^2.0.5",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
