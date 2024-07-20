@@ -59,7 +59,17 @@ const TrainingMode = ({ questions, onResetTopic }: TProps) => {
     <div style={{ maxWidth: '900px' }}>
       <div>
         <h2>Вопрос {question}</h2>
-        {imageUrl && <img src={imageUrl} alt="Картинка вопроса" style={{ maxWidth: '700px', width: "100%", height: 'auto' }} />}
+        {imageUrl && <img src={imageUrl} alt="Картинка вопроса"
+          style={{
+            maxWidth: '700px',
+            width: "100%",
+            height: 'auto',
+            maxHeight: '270px',
+            overflow: 'hidden',
+            objectFit: 'contain',
+            objectPosition: 'center',
+          }}
+        />}
         <AnswerList
           answers={answers}
           correctAnswer={correctAnswer}

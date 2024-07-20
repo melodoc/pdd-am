@@ -21,7 +21,7 @@ const NavigationButtons = ({
         ⏮️ Назад
       </button>
       <button onClick={handleNextQuestionClick} disabled={isNextDisabled}>
-        Пропустить ⏭️
+        Вперед ⏭️
       </button>
     </>
   );
