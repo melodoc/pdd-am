@@ -3,4 +3,5 @@ export type TQuestions = {
     answers: Array<string>
     correctAnswer: number;
     imageUrl?: string;
+    pass?: boolean;
 }

@@ -891,7 +891,7 @@ export const questions6: Array<TQuestions> = [
         "2. Разрешено только с целью обгона.",
         "3. Запрещено."
       ],
-      correctAnswer: 2,
+      correctAnswer: 0,
       imageUrl:`${PATHNAME}/6/theme_6_pic_85.png`
     },
     {
