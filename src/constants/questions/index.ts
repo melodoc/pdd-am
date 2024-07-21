@@ -7,3 +7,4 @@ export * from './questions6';
 export * from './questions7';
 export * from './questions8';
 export * from './questions9';
+export * from './questions10';
