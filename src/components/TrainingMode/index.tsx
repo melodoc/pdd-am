@@ -1,16 +1,16 @@
-import { useCallback, useState } from 'react';
-import { TQuestions } from '../../types/question';
-import AnswerList from './components/AnswerList';
-import Result from './components/Result';
-import NavigationButtons from './components/NavigationButtons';
-import NavigationForm from './components/NavigationForm';
+import { useCallback, useState } from "react";
+import { TQuestions } from "../../types/question";
+import AnswerList from "./components/AnswerList";
+import Result from "./components/Result";
+import NavigationButtons from "./components/NavigationButtons";
+import NavigationForm from "./components/NavigationForm";
 
 type TProps = {
   questions: Array<TQuestions>;
   onResetTopic: () => void;
 };
 
-const TrainingMode = ({ questions, onResetTopic }: TProps) => {
+function TrainingMode({ questions, onResetTopic }: TProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
@@ -51,25 +51,34 @@ const TrainingMode = ({ questions, onResetTopic }: TProps) => {
     }
   };
 
-  const { question, imageUrl, answers, correctAnswer } = questions[currentQuestion];
+  const {
+    question, imageUrl, answers, correctAnswer,
+  } = questions[currentQuestion];
   const isPrevDisabled = currentQuestion === 0;
   const isNextDisabled = currentQuestion === questions.length - 1;
 
   return (
-    <div style={{ maxWidth: '900px' }}>
+    <div style={{ maxWidth: "900px" }}>
       <div>
-        <h2>Вопрос {question}</h2>
-        {imageUrl && <img src={imageUrl} alt="Картинка вопроса"
+        <h2>
+          Вопрос
+          {question}
+        </h2>
+        {imageUrl && (
+        <img
+          src={imageUrl}
+          alt="Картинка вопроса"
           style={{
-            maxWidth: '700px',
+            maxWidth: "700px",
             width: "100%",
-            height: 'auto',
-            maxHeight: '270px',
-            overflow: 'hidden',
-            objectFit: 'contain',
-            objectPosition: 'center',
+            height: "auto",
+            maxHeight: "270px",
+            overflow: "hidden",
+            objectFit: "contain",
+            objectPosition: "center",
           }}
-        />}
+        />
+        )}
         <AnswerList
           answers={answers}
           correctAnswer={correctAnswer}
@@ -99,6 +108,6 @@ const TrainingMode = ({ questions, onResetTopic }: TProps) => {
       </div>
     </div>
   );
-};
+}
 
 export default TrainingMode;

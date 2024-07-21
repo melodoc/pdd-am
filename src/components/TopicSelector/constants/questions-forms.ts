@@ -1,1 +1,1 @@
-export const QUESTIONS_FORMS = ['вопрос', 'вопроса', 'вопросов'];
+export const QUESTIONS_FORMS = ["вопрос", "вопроса", "вопросов"];

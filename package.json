@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{js,ts,tsx}' --fix",
     "preview": "vite preview"
   },
   "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
     "gifsicle": "^5.2.1",
     "pngquant-bin": "^6.0.1",
     "react": "^18.2.0",
@@ -23,6 +25,11 @@
     "@vitejs/plugin-react": "^4.2.1",
     "compress-images": "^2.0.5",
     "eslint": "^8.57.0",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",

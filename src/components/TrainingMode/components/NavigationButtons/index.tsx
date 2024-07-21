@@ -5,26 +5,33 @@ type TProps = {
   isNextDisabled: boolean;
 };
 
-const NavigationButtons = ({
+function NavigationButtons({
   handlePrevQuestionClick,
   handleNextQuestionClick,
   isPrevDisabled,
-  isNextDisabled
-}: TProps) => {
+  isNextDisabled,
+}: TProps) {
   return (
     <>
       <button
         style={{
-          marginRight: '8px'
+          marginRight: "8px",
         }}
-        onClick={handlePrevQuestionClick} disabled={isPrevDisabled}>
+        type="button"
+        onClick={handlePrevQuestionClick}
+        disabled={isPrevDisabled}
+      >
         ⏮️ Назад
       </button>
-      <button onClick={handleNextQuestionClick} disabled={isNextDisabled}>
+      <button
+        type="button"
+        onClick={handleNextQuestionClick}
+        disabled={isNextDisabled}
+      >
         Вперед ⏭️
       </button>
     </>
   );
-};
+}
 
 export default NavigationButtons;

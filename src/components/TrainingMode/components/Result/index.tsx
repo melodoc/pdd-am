@@ -4,16 +4,17 @@ type TProps = {
     answers: string[];
 };
 
-const Result = ({ selectedAnswer, correctAnswer, answers }: TProps) => {
-    return (
-        <>
-            {selectedAnswer === correctAnswer ? (
-                <p>Правильно!</p>
-            ) : (
-                <p>Неправильно! Правильный ответ: {answers[correctAnswer]}</p>
-            )}
-        </>
-    );
-};
+function Result({ selectedAnswer, correctAnswer, answers }: TProps) {
+  return (
+    selectedAnswer === correctAnswer ? (
+      <p>Правильно!</p>
+    ) : (
+      <p>
+        Неправильно! Правильный ответ:
+        {answers[correctAnswer]}
+      </p>
+    )
+  );
+}
 
 export default Result;
