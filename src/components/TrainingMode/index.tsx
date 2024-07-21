@@ -61,8 +61,7 @@ function TrainingMode({ questions, onResetTopic }: TProps) {
     <div style={{ maxWidth: "900px" }}>
       <div>
         <h2>
-          Вопрос
-          {question}
+          {`Вопрос.\u00A0${question}`}
         </h2>
         {imageUrl && (
         <img
@@ -86,6 +85,7 @@ function TrainingMode({ questions, onResetTopic }: TProps) {
           selectedAnswer={selectedAnswer}
           showResult={showResult}
           onAnswerClick={handleAnswerClick}
+          onNextQuestionClick={handleNextQuestionClick}
         />
         {showResult && (
           <Result

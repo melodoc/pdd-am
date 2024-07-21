@@ -17,15 +17,18 @@ function Navigation({
         display: "flex", justifyContent: "center", gap: "8px", flexDirection: "column", marginTop: "32px",
       }}
     >
-      <h3 style={{ margin: "0" }}>
-        Навигация
-      </h3>
       <form
         style={{
           display: "flex", justifyContent: "center", flexDirection: "column", gap: "8px",
         }}
         onSubmit={onGoToQuestionClick}
       >
+        <button
+          type="button"
+          onClick={onResetTopic}
+        >
+          📚 К темам
+        </button>
         <div style={{ display: "flex", justifyContent: "center", gap: "8px" }}>
           <button
             type="button"
@@ -39,15 +42,9 @@ function Navigation({
             type="number"
             value={inputQuestionNumber}
             onChange={onInputChange}
-            placeholder="Введите номер вопроса"
+            placeholder="Номер вопроса: 23"
           />
         </div>
-        <button
-          type="button"
-          onClick={onResetTopic}
-        >
-          📚 К темам
-        </button>
       </form>
     </div>
   );

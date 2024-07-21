@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { addNonBreakingSpace } from "../../../../utils/add-non-breaking-space";
+import { getAnswerStyle } from "../../../../utils/get-answer-style";
 
 type TProps = {
     answers: string[];
@@ -7,18 +8,12 @@ type TProps = {
     selectedAnswer: number | null;
     showResult: boolean;
     onAnswerClick: (index: number) => void;
+    onNextQuestionClick: () => void;
 };
 
 function AnswerList({
-  answers, correctAnswer, selectedAnswer, showResult, onAnswerClick,
+  answers, correctAnswer, selectedAnswer, showResult, onAnswerClick, onNextQuestionClick,
 }: TProps) {
-  const getAnswerStyle = useCallback((index: number) => {
-    if (!showResult) return "white";
-    if (index === correctAnswer) return "green";
-    if (index === selectedAnswer) return "red";
-    return "white";
-  }, [correctAnswer, selectedAnswer, showResult]);
-
   return (
     <ul
       style={{
@@ -34,16 +29,16 @@ function AnswerList({
           key={`${index}+${answer}`}
           style={{
             marginBottom: "8px",
-            color: getAnswerStyle(index),
+            color: getAnswerStyle(index, correctAnswer, selectedAnswer, showResult),
           }}
         >
           <button
-            onClick={() => onAnswerClick(index)}
+            onClick={() => (showResult ? onNextQuestionClick() : onAnswerClick(index))}
             type="button"
             style={{
               marginBottom: "8px",
               textAlign: "left",
-              color: getAnswerStyle(index),
+              color: getAnswerStyle(index, correctAnswer, selectedAnswer, showResult),
             }}
           >
             {addNonBreakingSpace(answer)}
