@@ -76,6 +76,7 @@ function TrainingMode({ questions, onResetTopic }: TProps) {
             overflow: "hidden",
             objectFit: "contain",
             objectPosition: "center",
+            marginBottom: "32px",
           }}
         />
         )}

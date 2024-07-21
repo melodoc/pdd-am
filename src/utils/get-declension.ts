@@ -14,5 +14,5 @@ export const getDeclension = (number: number, forms: Array<string>) => {
     form = five;
   }
 
-  return `${number} ${form}`;
+  return `${number}\u00A0${form}`;
 };

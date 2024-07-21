@@ -24,7 +24,7 @@ function TopicSelector({ onSelectTopic }: TProps) {
         display: "grid",
         margin: 0,
         padding: 0,
-        gridTemplateColumns: "repeat(2, 1fr)",
+        gridTemplateColumns: "repeat(1, 1fr)",
         gridGap: "10px",
       }}
       >
