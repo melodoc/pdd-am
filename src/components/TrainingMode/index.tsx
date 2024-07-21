@@ -8,9 +8,11 @@ import NavigationForm from "./components/NavigationForm";
 type TProps = {
   questions: Array<TQuestions>;
   onResetTopic: () => void;
+  // eslint-disable-next-line react/require-default-props
+  showNavigationForm?: boolean;
 };
 
-function TrainingMode({ questions, onResetTopic }: TProps) {
+function TrainingMode({ questions, onResetTopic, showNavigationForm = true }: TProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
@@ -64,20 +66,20 @@ function TrainingMode({ questions, onResetTopic }: TProps) {
           {`Вопрос.\u00A0${question}`}
         </h2>
         {imageUrl && (
-        <img
-          src={imageUrl}
-          alt="Картинка вопроса"
-          style={{
-            maxWidth: "700px",
-            width: "100%",
-            height: "auto",
-            maxHeight: "270px",
-            overflow: "hidden",
-            objectFit: "contain",
-            objectPosition: "center",
-            marginBottom: "32px",
-          }}
-        />
+          <img
+            src={imageUrl}
+            alt="Картинка вопроса"
+            style={{
+              maxWidth: "700px",
+              width: "100%",
+              height: "auto",
+              maxHeight: "270px",
+              overflow: "hidden",
+              objectFit: "contain",
+              objectPosition: "center",
+              marginBottom: "32px",
+            }}
+          />
         )}
         <AnswerList
           answers={answers}
@@ -100,12 +102,22 @@ function TrainingMode({ questions, onResetTopic }: TProps) {
           isPrevDisabled={isPrevDisabled}
           isNextDisabled={isNextDisabled}
         />
-        <NavigationForm
-          onGoToQuestionClick={handleGoToQuestionClick}
-          onInputChange={handleInputChange}
-          inputQuestionNumber={inputQuestionNumber}
-          onResetTopic={onResetTopic}
-        />
+        {showNavigationForm && (
+          <NavigationForm
+            onGoToQuestionClick={handleGoToQuestionClick}
+            onInputChange={handleInputChange}
+            inputQuestionNumber={inputQuestionNumber}
+            onResetTopic={onResetTopic}
+          />
+        )}
+        {!showNavigationForm && (
+        <button
+          type="button"
+          onClick={onResetTopic}
+        >
+          📚 К темам
+        </button>
+        )}
       </div>
     </div>
   );

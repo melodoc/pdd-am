@@ -1,3 +1,4 @@
+import { TQuestions } from "../types/question";
 import {
   questions1,
   questions2,
@@ -11,7 +12,13 @@ import {
   questions10,
 } from "./questions";
 
-export const TOPICS_MAP = new Map([
+export type TTopic = {
+  id: number;
+  name: string;
+  questions: TQuestions[];
+};
+
+export const TOPICS_MAP: Map<number, TTopic> = new Map([
   [1, { id: 1, name: "Группа-1", questions: questions1 }],
   [2, { id: 2, name: "Группа-2", questions: questions2 }],
   [3, { id: 3, name: "Группа-3", questions: questions3 }],

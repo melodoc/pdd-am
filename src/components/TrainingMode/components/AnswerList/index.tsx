@@ -1,4 +1,3 @@
-import { useCallback } from "react";
 import { addNonBreakingSpace } from "../../../../utils/add-non-breaking-space";
 import { getAnswerStyle } from "../../../../utils/get-answer-style";
 
