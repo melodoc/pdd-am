@@ -1,3 +1,5 @@
+import BackToTopicButton from "../../../../shared-components/BackToTopicButton";
+
 type TProps = {
     inputQuestionNumber: string;
     onGoToQuestionClick: (e: React.ChangeEvent<unknown>) => void;
@@ -10,7 +12,7 @@ function Navigation({
   onGoToQuestionClick,
   onInputChange,
   onResetTopic,
-}: TProps) {
+}: Readonly<TProps>) {
   return (
     <div
       style={{
@@ -23,12 +25,7 @@ function Navigation({
         }}
         onSubmit={onGoToQuestionClick}
       >
-        <button
-          type="button"
-          onClick={onResetTopic}
-        >
-          📚 К темам
-        </button>
+        <BackToTopicButton onResetTopic={onResetTopic} />
         <div style={{ display: "flex", justifyContent: "center", gap: "8px" }}>
           <button
             type="button"

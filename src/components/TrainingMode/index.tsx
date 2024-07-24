@@ -4,24 +4,39 @@ import AnswerList from "./components/AnswerList";
 import Result from "./components/Result";
 import NavigationButtons from "./components/NavigationButtons";
 import NavigationForm from "./components/NavigationForm";
+import QuestionImage from "./components/Image";
 
 type TProps = {
   questions: Array<TQuestions>;
   onResetTopic: () => void;
+  topicId: number;
+  onSaveIncorrectAnswer?: (topicId: number, questionIndex: number) => void;
   // eslint-disable-next-line react/require-default-props
   showNavigationForm?: boolean;
 };
 
-function TrainingMode({ questions, onResetTopic, showNavigationForm = true }: TProps) {
+function TrainingMode({
+  questions,
+  onResetTopic,
+  topicId,
+  onSaveIncorrectAnswer,
+  showNavigationForm = true,
+}: Readonly<TProps>) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [inputQuestionNumber, setInputQuestionNumber] = useState<string>("");
 
-  const handleAnswerClick = useCallback((index: number) => {
-    setSelectedAnswer(index);
-    setShowResult(true);
-  }, []);
+  const handleAnswerClick = useCallback(
+    (index: number) => {
+      setSelectedAnswer(index);
+      setShowResult(true);
+      if (index !== questions[currentQuestion].correctAnswer) {
+        onSaveIncorrectAnswer?.(topicId, currentQuestion);
+      }
+    },
+    [currentQuestion, onSaveIncorrectAnswer, questions, topicId],
+  );
 
   const handleNextQuestionClick = useCallback(() => {
     setShowResult(false);
@@ -54,7 +69,10 @@ function TrainingMode({ questions, onResetTopic, showNavigationForm = true }: TP
   };
 
   const {
-    question, imageUrl, answers, correctAnswer,
+    question,
+    imageUrl,
+    answers,
+    correctAnswer,
   } = questions[currentQuestion];
   const isPrevDisabled = currentQuestion === 0;
   const isNextDisabled = currentQuestion === questions.length - 1;
@@ -62,25 +80,8 @@ function TrainingMode({ questions, onResetTopic, showNavigationForm = true }: TP
   return (
     <div style={{ maxWidth: "900px" }}>
       <div>
-        <h2>
-          {`Вопрос.\u00A0${question}`}
-        </h2>
-        {imageUrl && (
-          <img
-            src={imageUrl}
-            alt="Картинка вопроса"
-            style={{
-              maxWidth: "700px",
-              width: "100%",
-              height: "auto",
-              maxHeight: "270px",
-              overflow: "hidden",
-              objectFit: "contain",
-              objectPosition: "center",
-              marginBottom: "32px",
-            }}
-          />
-        )}
+        <h2>{`Вопрос.\u00A0${question}`}</h2>
+        <QuestionImage imageUrl={imageUrl} />
         <AnswerList
           answers={answers}
           correctAnswer={correctAnswer}
@@ -109,14 +110,6 @@ function TrainingMode({ questions, onResetTopic, showNavigationForm = true }: TP
             inputQuestionNumber={inputQuestionNumber}
             onResetTopic={onResetTopic}
           />
-        )}
-        {!showNavigationForm && (
-        <button
-          type="button"
-          onClick={onResetTopic}
-        >
-          📚 К темам
-        </button>
         )}
       </div>
     </div>

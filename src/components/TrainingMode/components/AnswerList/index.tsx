@@ -12,7 +12,7 @@ type TProps = {
 
 function AnswerList({
   answers, correctAnswer, selectedAnswer, showResult, onAnswerClick, onNextQuestionClick,
-}: TProps) {
+}: Readonly<TProps>) {
   return (
     <ul
       style={{
