@@ -1,4 +1,4 @@
-import { clearSavedIncorrectAnswers } from "../../utils/local-storage-helper";
+import { clearSavedIncorrectAnswers } from "../../../../utils/local-storage-helper";
 
 function ClearErrorsButton() {
   const handleResetErrors = () => {

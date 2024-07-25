@@ -1,13 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 import TrainingMode from "../TrainingMode";
 import TopicSelector from "../TopicSelector";
-import { TQuestions } from "../../types/question";
-import { TOPICS_MAP } from "../../constants/topics";
-import { getSavedIncorrectAnswers, saveIncorrectAnswers } from "../../utils/local-storage-helper";
-import { isNullable } from "../../utils/is-nullable";
-import { TSavedAnswers } from "../../types/answers";
 import TroubleshootingMode from "../TroubleshootingMode";
-import ClearErrorsButton from "../ClearErrorsButton";
+import { TQuestions } from "../../types/question";
+import { TSavedAnswers } from "../../types/answers";
+import { TOPICS_MAP } from "../../constants/topics";
+import { isNullable } from "../../utils/is-nullable";
+import { getSavedIncorrectAnswers, saveIncorrectAnswers } from "../../utils/local-storage-helper";
 
 function MainPage() {
   const [selectedTopic, setSelectedTopic] = useState<number | null>(null);
@@ -68,7 +67,6 @@ function MainPage() {
             onOpenTrainingMode={handleOpenTrainingMode}
             onResetTopic={handleResetTopic}
           />
-          <ClearErrorsButton />
         </>
       ) : (
         <TrainingMode

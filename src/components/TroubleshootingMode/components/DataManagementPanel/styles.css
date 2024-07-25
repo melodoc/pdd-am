@@ -1,0 +1,35 @@
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.file-upload-buttons {
+    display: inline-flex
+}
+
+.file-upload-input {
+    display: none;
+}
+
+.file-upload-label {
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color 0.25s;
+}
+
+.file-upload-label:hover {
+    border-color: #646cff;
+}
+
+.file-upload-input:focus + .file-upload-label,
+.file-upload-input:focus-visible + .file-upload-label {
+    outline: 4px auto -webkit-focus-ring-color;
+}

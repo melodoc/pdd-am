@@ -4,6 +4,8 @@ import { TQuestions } from "../../types/question";
 import BackToTopicButton from "../../shared-components/BackToTopicButton";
 import OpenTroubleshootingButton from "./components/OpenTroubleshootingButton";
 import TroubleshootingBody from "./components/TroubleshootingBody";
+import ClearErrorsButton from "./components/ClearErrorsButton";
+import DataManagementPanel from "./components/DataManagementPanel";
 
 type TProps = {
   onResetTopic: () => void;
@@ -27,9 +29,7 @@ function TroubleshootingMode({
 
   return (
     <>
-      <h1>
-        🔄  Режим работы над ошибками
-      </h1>
+      <h1> ❓  Режим работы над ошибками</h1>
       {isTrainingModeOpen ? (
         <>
           <TroubleshootingBody questions={questions} onResetTopic={onResetTopic} />
@@ -41,7 +41,13 @@ function TroubleshootingMode({
           </div>
         </>
       )
-        : <OpenTroubleshootingButton onOpenTrainingMode={onOpenTrainingMode} />}
+        : (
+          <>
+            <OpenTroubleshootingButton onOpenTrainingMode={onOpenTrainingMode} />
+            <DataManagementPanel />
+            <ClearErrorsButton />
+          </>
+        )}
     </>
   );
 }
