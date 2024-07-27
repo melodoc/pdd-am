@@ -1,24 +1,31 @@
 import TopicList from "./components/TopicList";
 
 type TProps = {
-    onSelectTopic: (id: number) => void;
-    isTrainingModeOpen: boolean;
+  isTopicPanelOpen: boolean;
+  onSelectTopic: (id: number) => void;
+  onTogglePanel: () => void;
 };
 
-function TopicSelector({ onSelectTopic, isTrainingModeOpen }: Readonly<TProps>) {
-  if (isTrainingModeOpen) return null;
+function TopicSelector({ isTopicPanelOpen, onSelectTopic, onTogglePanel }: Readonly<TProps>) {
   return (
-    <div>
-      <h1>
-        🏁 ПДД 2024: Список вопросов к теоретическим экзаменам
-        на водительские права Республики Армения 🇦🇲
-      </h1>
-      <h1>Вопросы ПДД по группам</h1>
-      <TopicList
-        onSelectTopic={onSelectTopic}
-        isTrainingModeOpen={isTrainingModeOpen}
-      />
-    </div>
+    <>
+      <button
+        type="button"
+        onClick={onTogglePanel}
+        style={{
+          backgroundColor: "rgb(4 82 158)",
+        }}
+      >
+        {`${isTopicPanelOpen ? "🔼" : "📒"} Вопросы ПДД по группам`}
+      </button>
+      {isTopicPanelOpen && (
+        <div>
+          <TopicList
+            onSelectTopic={onSelectTopic}
+          />
+        </div>
+      )}
+    </>
   );
 }
 

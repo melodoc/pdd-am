@@ -1,13 +1,5 @@
-.file-upload-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-
-.file-upload-buttons {
-    display: inline-flex
+.file-upload-button {
+    display: contents;
 }
 
 .file-upload-input {

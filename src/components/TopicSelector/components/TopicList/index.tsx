@@ -5,15 +5,12 @@ import { QUESTIONS_FORMS } from "./constants/questions-forms";
 
 type TProps = {
     onSelectTopic: (id: number) => void;
-    isTrainingModeOpen: boolean;
 };
 
-function TopicList({ onSelectTopic, isTrainingModeOpen }: Readonly<TProps>) {
+function TopicList({ onSelectTopic }: Readonly<TProps>) {
   const handleOnClick = useCallback((id: number) => {
     onSelectTopic(id);
   }, [onSelectTopic]);
-
-  if (isTrainingModeOpen) return null;
 
   return (
     <ul style={{

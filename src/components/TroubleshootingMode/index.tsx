@@ -2,21 +2,18 @@ import { useEffect, useState } from "react";
 import { getIncorrectQuestionsFromLocalStorage } from "./utils/get-incorrect-questions-from-local-storage";
 import { TQuestions } from "../../types/question";
 import BackToTopicButton from "../../shared-components/BackToTopicButton";
-import OpenTroubleshootingButton from "./components/OpenTroubleshootingButton";
 import TroubleshootingBody from "./components/TroubleshootingBody";
-import ClearErrorsButton from "./components/ClearErrorsButton";
-import DataManagementPanel from "./components/DataManagementPanel";
 
 type TProps = {
+  isTrainingModeOpen: boolean;
   onResetTopic: () => void;
   onOpenTrainingMode: () => void;
-  isTrainingModeOpen: boolean;
 };
 
 function TroubleshootingMode({
+  isTrainingModeOpen,
   onResetTopic,
   onOpenTrainingMode,
-  isTrainingModeOpen,
 }: Readonly<TProps>) {
   const [questions, setQuestions] = useState<TQuestions[]>([]);
 
@@ -29,9 +26,9 @@ function TroubleshootingMode({
 
   return (
     <>
-      <h1> ❓  Режим работы над ошибками</h1>
-      {isTrainingModeOpen ? (
+      {isTrainingModeOpen && (
         <>
+          <h1>❓ Режим работы над ошибками</h1>
           <TroubleshootingBody questions={questions} onResetTopic={onResetTopic} />
           <div style={{
             marginTop: "8px",
@@ -40,14 +37,17 @@ function TroubleshootingMode({
             <BackToTopicButton onResetTopic={onResetTopic} />
           </div>
         </>
-      )
-        : (
-          <>
-            <OpenTroubleshootingButton onOpenTrainingMode={onOpenTrainingMode} />
-            <DataManagementPanel />
-            <ClearErrorsButton />
-          </>
-        )}
+      )}
+      <button
+        style={{
+          display: isTrainingModeOpen ? "none" : "block",
+          backgroundColor: "rgb(191 52 1)",
+        }}
+        type="button"
+        onClick={onOpenTrainingMode}
+      >
+        🧩 Работа над ошибками
+      </button>
     </>
   );
 }

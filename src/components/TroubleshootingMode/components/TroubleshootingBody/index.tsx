@@ -3,9 +3,9 @@ import TrainingMode from "../../../TrainingMode";
 import { TQuestions } from "../../../../types/question";
 
 type TProps = {
-    onResetTopic: () => void;
-    // eslint-disable-next-line react/require-default-props
-    questions?: TQuestions[];
+  onResetTopic: () => void;
+  // eslint-disable-next-line react/require-default-props
+  questions?: TQuestions[];
 };
 
 const TroubleshootingBody = React.memo<Readonly<TProps>>(({ onResetTopic, questions }: TProps) => (

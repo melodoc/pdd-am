@@ -11,7 +11,6 @@ type TProps = {
   onResetTopic: () => void;
   topicId: number;
   onSaveIncorrectAnswer?: (topicId: number, questionIndex: number) => void;
-  // eslint-disable-next-line react/require-default-props
   showNavigationForm?: boolean;
 };
 
