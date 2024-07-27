@@ -12,11 +12,11 @@ function DataManagementPanel() {
   };
 
   return (
-    <div>
+    <>
       <h1> 🎓 Управление вопросами для тренировки</h1>
       <div className="file-upload-container">
         <button type="button" onClick={() => exportDataToFile(LOCAL_STORAGE_KEYS.answers, "incorrectAnswers.json")}>
-          📤 Экспортировать
+          🚚 Экспортировать
         </button>
         <div className="file-upload-buttons">
           <input
@@ -36,7 +36,7 @@ function DataManagementPanel() {
           </label>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
