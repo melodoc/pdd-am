@@ -24,6 +24,7 @@ function DataManagementPanel() {
         type="button"
         style={{
           backgroundColor: "rgb(182 118 0)",
+          color: "white",
         }}
         onClick={handleExportDataToFile}
       >
@@ -33,6 +34,7 @@ function DataManagementPanel() {
         <label
           style={{
             backgroundColor: "rgb(9 115 9)",
+            color: "white",
           }}
           className="file-upload-label"
           htmlFor={CUSTOM_BUTTON_ID}

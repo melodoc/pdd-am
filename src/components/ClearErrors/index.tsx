@@ -10,6 +10,7 @@ function ClearErrors() {
     <button
       style={{
         backgroundColor: "black",
+        color: "white",
       }}
       type="button"
       onClick={handleResetErrors}

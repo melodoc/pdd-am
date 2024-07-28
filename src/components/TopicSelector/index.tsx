@@ -14,6 +14,7 @@ function TopicSelector({ isTopicPanelOpen, onSelectTopic, onTogglePanel }: Reado
         onClick={onTogglePanel}
         style={{
           backgroundColor: "rgb(4 82 158)",
+          color: "white",
         }}
       >
         {`${isTopicPanelOpen ? "🔼" : "📒"} Вопросы ПДД по группам`}

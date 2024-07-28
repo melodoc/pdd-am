@@ -42,6 +42,7 @@ function TroubleshootingMode({
         style={{
           display: isTrainingModeOpen ? "none" : "block",
           backgroundColor: "rgb(191 52 1)",
+          color: "white",
         }}
         type="button"
         onClick={onOpenTrainingMode}
