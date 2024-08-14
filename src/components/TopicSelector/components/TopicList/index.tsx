@@ -18,11 +18,11 @@ function TopicList({ onSelectTopic }: Readonly<TProps>) {
       display: "grid",
       margin: 0,
       padding: 0,
-      gridTemplateColumns: "repeat(1, 1fr)",
+      gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
       gridGap: "10px",
     }}
     >
-      {TOPICS.map((topic) => (
+      {TOPICS.map((topic, index) => (
         <li key={`${topic.id}_${topic.name}`}>
           <button
             type="button"
@@ -32,7 +32,11 @@ function TopicList({ onSelectTopic }: Readonly<TProps>) {
             }}
             onClick={() => handleOnClick(topic.id)}
           >
-            <span>{topic.name}</span>
+            <span>
+              {index}
+              -
+              {topic.name}
+            </span>
             <span
               style={{
                 marginLeft: "8px",
