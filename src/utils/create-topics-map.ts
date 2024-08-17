@@ -7,13 +7,15 @@ export const createTopicsMap = (groupedQuestions: Array<Array<TQuestions>>, grou
 
   groupedQuestions.forEach((questionsGroup, index) => {
     const topicId = index + 1;
-    // Формирование уникального ключа с учетом group
-    const topicKey = group * 100 + topicId;
-    const topicName = `Группа-${group}-${topicId}`;
+    const id = group * 10 + topicId;
+    const name = `Группа-${group}`;
+    const subGroupName = `Подгруппа-${topicId}`;
 
-    topicsMap.set(topicKey, {
-      id: topicKey,
-      name: topicName,
+    topicsMap.set(id, {
+      id,
+      name,
+      group,
+      subGroupName,
       questions: questionsGroup,
     });
   });

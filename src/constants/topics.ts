@@ -18,6 +18,8 @@ import {
 export type TTopic = {
   id: number;
   name: string;
+  group: number;
+  subGroupName: string;
   questions: TQuestions[];
 };
 
