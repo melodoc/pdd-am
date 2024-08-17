@@ -80,7 +80,13 @@ function TrainingMode({
   const isNextDisabled = currentQuestion === questions.length - 1;
 
   return (
-    <div style={{ maxWidth: "900px" }}>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: window.innerWidth < 900 ? "1fr" : "minmax(900px, 1fr)",
+        width: "100%",
+      }}
+    >
       <div>
         <h2>{`Вопрос.\u00A0${question}`}</h2>
         <QuestionImage imageUrl={imageUrl} />

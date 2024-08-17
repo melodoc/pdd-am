@@ -37,6 +37,7 @@ function AnswerList({
             style={{
               marginBottom: "8px",
               textAlign: "left",
+              width: "100%",
               color: getAnswerStyle(index, correctAnswer, selectedAnswer, showResult),
             }}
           >
