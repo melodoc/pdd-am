@@ -53,19 +53,22 @@ function TrainingMode({
     }
   }, [currentQuestion]);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setInputQuestionNumber(e.target.value);
-  };
+  }, []);
 
-  const handleGoToQuestionClick = (e: React.ChangeEvent<unknown>) => {
+  const handleGoToQuestionClick = useCallback((e: React.ChangeEvent<unknown>) => {
     e.preventDefault();
-    const questionNumber = parseInt(inputQuestionNumber, 10) - 1;
-    if (questionNumber >= 0 && questionNumber < questions.length) {
-      setCurrentQuestion(questionNumber);
+    const questionNumber = parseInt(inputQuestionNumber, 10);
+
+    const questionIndex = questions.findIndex((q) => parseInt(q.question.split(".")[0], 10) === questionNumber);
+
+    if (questionIndex !== -1) {
+      setCurrentQuestion(questionIndex);
       setShowResult(false);
       setSelectedAnswer(null);
     }
-  };
+  }, [inputQuestionNumber, questions]);
 
   const {
     question,

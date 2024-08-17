@@ -13,3 +13,23 @@ export const saveIncorrectAnswers = (incorrectAnswers: {
 export const clearSavedIncorrectAnswers = () => {
   localStorage.removeItem(LOCAL_STORAGE_KEYS.answers);
 };
+
+export const getSelectedGroup = (): number | null => {
+  const selectedGroup = localStorage.getItem(LOCAL_STORAGE_KEYS.selectedGroup);
+  return selectedGroup ? JSON.parse(selectedGroup) : null;
+};
+
+export const saveSelectedGroup = (group: number) => localStorage
+  .setItem(LOCAL_STORAGE_KEYS.selectedGroup, JSON.stringify(group));
+
+export const getSelectedSubGroup = (): number | null => {
+  const selectedSubGroup = localStorage.getItem(LOCAL_STORAGE_KEYS.selectedSubGroup);
+  return selectedSubGroup ? JSON.parse(selectedSubGroup) : null;
+};
+
+export const saveSelectedSubGroup = (subGroup: number) => localStorage
+  .setItem(LOCAL_STORAGE_KEYS.selectedSubGroup, JSON.stringify(subGroup));
+
+export const clearSelectedSubGroup = () => {
+  localStorage.removeItem(LOCAL_STORAGE_KEYS.selectedSubGroup);
+};

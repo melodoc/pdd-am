@@ -6,14 +6,15 @@ import { TQuestions } from "../../types/question";
 import { TSavedAnswers } from "../../types/answers";
 import { TOPICS_MAP } from "../../constants/topics";
 import { isNullable } from "../../utils/is-nullable";
-import { getSavedIncorrectAnswers, saveIncorrectAnswers } from "../../utils/local-storage-helper";
+import { getSavedIncorrectAnswers, getSelectedGroup, saveIncorrectAnswers } from "../../utils/local-storage-helper";
 import Header from "../Header";
 import AdditionalFeatures from "../AdditionalFeatures";
 import "./styles.css";
 
 function MainPage() {
+  const initialSelectedGroup = getSelectedGroup();
   const [selectedTopic, setSelectedTopic] = useState<number | null>(null);
-  const [isTopicPanelOpen, setIsTopicPanelOpen] = useState(false);
+  const [isTopicPanelOpen, setIsTopicPanelOpen] = useState(Boolean(initialSelectedGroup));
   const [questions, setQuestions] = useState<TQuestions[]>([]);
   const [isTrainingModeOpen, setIsTrainingModeOpen] = useState(false);
   const [incorrectAnswers, setIncorrectAnswers] = useState<TSavedAnswers>(
@@ -43,6 +44,7 @@ function MainPage() {
   const handleResetTopic = useCallback(() => {
     setSelectedTopic(null);
     setIsTrainingModeOpen(false);
+    setIsTopicPanelOpen(true);
   }, []);
 
   const handleOpenTrainingMode = useCallback(() => {
